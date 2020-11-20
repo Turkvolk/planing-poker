@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": ["post"]
+    },
+    {
+      "type": "signalR",
+      "direction": "out",
+      "name": "events",
+      "hubName": "planningPoker",
+      "connectionStringSetting": "AZURE_SIGNALR_CONNECTIONSTRING"
+    }
+  ],
+  "scriptFile": "../dist/planning-pocker-api/index.js"
+}
