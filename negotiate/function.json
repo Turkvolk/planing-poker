@@ -4,7 +4,7 @@
     {
       "type": "signalRConnectionInfo",
       "name": "connectionInfo",
-      "hubName": "default",
+      "hubName": "planningPoker",
       "connectionStringSetting": "AZURE_SIGNALR_CONNECTIONSTRING",
       "direction": "in"
     },
@@ -12,7 +12,9 @@
       "type": "httpTrigger",
       "authLevel": "anonymous",
       "direction": "in",
-      "methods": ["post"],
+      "methods": [
+        "post"
+      ],
       "name": "req",
       "route": "negotiate"
     },
